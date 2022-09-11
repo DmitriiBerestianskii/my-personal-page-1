@@ -1,0 +1,23 @@
+
+/* canvas { */
+/*   position: fixed; */
+/*   left: 0; */
+/*   top: 0; */
+/* } */
+
+canvas {
+    left: 0;
+    top: 0;
+    position: fixed;
+    /* width: 100vw; */
+    /* height: 100vh; */
+    /* display: block; */
+    /* background: url(/images/sky1.2.jpeg) no-repeat center center; */
+    /* background-size: cover; */
+}
+
+article{
+  width: 100vh;
+  max-width: 200px;
+  word-break: break-all;
+}
