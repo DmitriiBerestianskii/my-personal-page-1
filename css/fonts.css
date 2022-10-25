@@ -1,0 +1,115 @@
+/* -- Legue Spartan, sans-serif -- */
+/* league-spartan-500 - latin */
+@font-face {
+  font-family: 'League Spartan';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./fonts/league-spartan-v6-latin/league-spartan-v6-latin-500.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('./fonts/league-spartan-v6-latin/league-spartan-v6-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./fonts/league-spartan-v6-latin/league-spartan-v6-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./fonts/league-spartan-v6-latin/league-spartan-v6-latin-500.woff') format('woff'), /* Modern Browsers */
+       url('./fonts/league-spartan-v6-latin/league-spartan-v6-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./fonts/league-spartan-v6-latin/league-spartan-v6-latin-500.svg#LeagueSpartan') format('svg'); /* Legacy iOS */
+}
+
+/* league-spartan-regular - latin */
+@font-face {
+  font-family: 'League Spartan';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/league-spartan-v6-latin/league-spartan-v6-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('./fonts/league-spartan-v6-latin/league-spartan-v6-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./fonts/league-spartan-v6-latin/league-spartan-v6-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./fonts/league-spartan-v6-latin/league-spartan-v6-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('./fonts/league-spartan-v6-latin/league-spartan-v6-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./fonts/league-spartan-v6-latin/league-spartan-v6-latin-regular.svg#LeagueSpartan') format('svg'); /* Legacy iOS */
+}
+
+/* league-spartan-600 - latin */
+@font-face {
+  font-family: 'League Spartan';
+  font-style: normal;
+  font-weight: 600;
+  src: url('./fonts/league-spartan-v6-latin/league-spartan-v6-latin-600.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('./fonts/league-spartan-v6-latin/league-spartan-v6-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./fonts/league-spartan-v6-latin/league-spartan-v6-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./fonts/league-spartan-v6-latin/league-spartan-v6-latin-600.woff') format('woff'), /* Modern Browsers */
+       url('./fonts/league-spartan-v6-latin/league-spartan-v6-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./fonts/league-spartan-v6-latin/league-spartan-v6-latin-600.svg#LeagueSpartan') format('svg'); /* Legacy iOS */
+}
+
+/* -- Libre Baskerville, serif -- */
+/* libre-baskerville-regular - latin */
+@font-face {
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/libre-baskerville-v14-latin/libre-baskerville-v14-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('./fonts/libre-baskerville-v14-latin/libre-baskerville-v14-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./fonts/libre-baskerville-v14-latin/libre-baskerville-v14-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./fonts/libre-baskerville-v14-latin/libre-baskerville-v14-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('./fonts/libre-baskerville-v14-latin/libre-baskerville-v14-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./fonts/libre-baskerville-v14-latin/libre-baskerville-v14-latin-regular.svg#LibreBaskerville') format('svg'); /* Legacy iOS */
+}
+
+/* libre-baskerville-italic - latin */
+@font-face {
+  font-family: 'Libre Baskerville';
+  font-style: italic;
+  font-weight: 400;
+  src: url('./fonts/libre-baskerville-v14-latin/libre-baskerville-v14-latin-italic.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('./fonts/libre-baskerville-v14-latin/libre-baskerville-v14-latin-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./fonts/libre-baskerville-v14-latin/libre-baskerville-v14-latin-italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./fonts/libre-baskerville-v14-latin/libre-baskerville-v14-latin-italic.woff') format('woff'), /* Modern Browsers */
+       url('./fonts/libre-baskerville-v14-latin/libre-baskerville-v14-latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./fonts/libre-baskerville-v14-latin/libre-baskerville-v14-latin-italic.svg#LibreBaskerville') format('svg'); /* Legacy iOS */
+}
+
+/* libre-baskerville-700 - latin */
+@font-face {
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./fonts/libre-baskerville-v14-latin/libre-baskerville-v14-latin-700.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('./fonts/libre-baskerville-v14-latin/libre-baskerville-v14-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./fonts/libre-baskerville-v14-latin/libre-baskerville-v14-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./fonts/libre-baskerville-v14-latin/libre-baskerville-v14-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('./fonts/libre-baskerville-v14-latin/libre-baskerville-v14-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./fonts/libre-baskerville-v14-latin/libre-baskerville-v14-latin-700.svg#LibreBaskerville') format('svg'); /* Legacy iOS */
+}
+
+
+/* -- Moon Dance handwriting -- */
+/* moon-dance-regular - latin */
+@font-face {
+  font-family: 'Moon Dance';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/moon-dance-v3-latin/moon-dance-v3-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('./fonts/moon-dance-v3-latin/moon-dance-v3-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./fonts/moon-dance-v3-latin/moon-dance-v3-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./fonts/moon-dance-v3-latin/moon-dance-v3-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('./fonts/moon-dance-v3-latin/moon-dance-v3-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./fonts/moon-dance-v3-latin/moon-dance-v3-latin-regular.svg#MoonDance') format('svg'); /* Legacy iOS */
+}
+
+/* -- Ultra modern -- */
+/* ultra-regular */
+@font-face {
+  font-family: 'Ultra';
+  font-weight: normal;
+  font-style: normal;
+  src: local(''),
+       url('./fonts/ultra-webfont/ultra-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./fonts/ultra-webfont/ultra-webfont.woff') format('woff'), /* Modern Browsers */
+       url('./fonts/ultra-webfont/ultra-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./fonts/ultra-webfont/ultra-webfont.svg#Ultra') format('svg'); /* Legacy iOS */
+}
+
