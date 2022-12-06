@@ -3,7 +3,6 @@ import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
 import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
 import { ShaderPass } from 'three/addons/postprocessing/ShaderPass.js';
 import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js';
-import Stats from 'three/addons/libs/stats.module.js';
 
 
 import vertexShader from './shaders/vertexShader.glsl';
@@ -82,9 +81,7 @@ function addStars(num, offset = {
   return stars
 }
 
-
 // Basic three.js setup
-const canvas = document.querySelector('#animated-bg');
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 const renderer = new THREE.WebGLRenderer(
@@ -97,25 +94,9 @@ const renderer = new THREE.WebGLRenderer(
 let loader = new THREE.TextureLoader();
 
 
-
 renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(window.innerWidth, window.innerHeight);
-//for the bloom toneMapping, makes dark
-// renderer.toneMapping = THREE.ReinhardToneMapping;
-
-// After the tone mapping
-//const canvas = document.getElementById('animated-bg');
-// console.log(canvas)
-// //canvas.appendChild(new Stats())
-// console.log("DOm element", renderer.domElement)
-// let stats = new Stats();
-// canvas.appendChild( stats.dom );
-// canvas.appendChild(renderer.domElement);
-
-
-
-
 
 
 camera.position.setZ(130);
@@ -143,13 +124,16 @@ loader.load("/images/smoke-transparent-1.png", function(texture) {
   for (let i = 0; i < 8; i++) {
     let cloud = new THREE.Mesh(cloudGeometry, cloudMaterial);
     // cloud.doubleSided = true
+    // let cloudZ = genUniqRndNum(zCloudSet, -600, -300);
+    //let cloudZ = THREE.MathUtils.randFloat(-500, -220);
+    // let cloudZ = THREE.MathUtils.randFloat(-400, -215);
     let cloudZ = genUniqRndNum(zCloudSet, -400, -215);
-    // zSuTEST = zSuTEST + cloudZ
-    // console.log("CLOUD Z: ", cloudZ)
+    zSuTEST = zSuTEST + cloudZ
+    console.log("CLOUD Z: ", cloudZ)
 
 
     cloud.position.set(
-      THREE.MathUtils.randFloat(-200, 200),
+      THREE.MathUtils.randFloat(-350, 350),
       // THREE.MathUtils.randFloat(-400, 400),
       100,
       // genUniqRndNum(zCloudSet, -600, -400),
@@ -164,7 +148,7 @@ loader.load("/images/smoke-transparent-1.png", function(texture) {
     cloudParticles.push(cloud);
     scene.add(cloud);
   }
-  // console.log("cloud z sum/8: ", zSuTEST / 8.0)
+  console.log("cloud z sum/8: ", zSuTEST / 8.0)
 });
 
 //TorusKnot
@@ -174,7 +158,7 @@ loader.load("/images/smoke-transparent-1.png", function(texture) {
 // const torusKnot_1 = new THREE.Mesh(geometry, material);
 // scene.add(torusKnot_1);
 // torusKnot_1.position.set(-10, 11, -38)
-// torusKnot_1.position.set(-10, 11, -58)
+// // torusKnot_1.position.set(-10, 11, -58)
 
 // Lights
 //const pointLightOne = new THREE.PointLight(0xffffff, 1, 100, 1.7);
@@ -213,34 +197,6 @@ scene.add(blueLight);
 //addStars(40, { ...camera.position, 'z': camera.position.z - 160 }, 75);
 addStars(40, { ...camera.position, 'z': camera.position.z - 160 }, 75);
 addStars(30, { ...camera.position, 'z': camera.position.z - 141 }, 15);
-//console.log("Stats: ", starList)
-// addStars(100, { 'x': 0, 'y': 0, 'z': 0 },);
-//console.log("CAMPos: ", camera.position);
-
-//Sky texture
-const skyTexture1 = new THREE.TextureLoader().load('/images/sky1.2.jpeg');
-scene.background = skyTexture1;
-//Effects
-// loader.load("/images/sky1.2.jpeg", function(texture) {
-//   console.log("sky loaded")
-
-//   const textureEffect = new POSTPROCESSING.TextureEffect({
-//     blendFunction: POSTPROCESSING.BlendFunction.COLOR_DODGE,
-//     texture: texture
-//   });
-//   textureEffect.blendMode.opacity.value = 0.2;
-
-
-//   let effectPass = new POSTPROCESSING.EffectPass(
-//     camera,
-//     textureEffect
-//   );
-//   effectPass.renderToScreen = true;
-
-//   composer = new POSTPROCESSING.EffectComposer(renderer);
-//   composer.addPass(new POSTPROCESSING.RenderPass(scene, camera));
-//   composer.addPass(effectPass);
-// });
 
 //Postrocessing unreal bloom
 
