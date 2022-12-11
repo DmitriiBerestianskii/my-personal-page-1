@@ -30,8 +30,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - run: make
-
       - if: ${{ github.ref == 'refs/heads/main' }}
         id: deploy
         continue-on-error: true
