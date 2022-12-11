@@ -1,51 +1,33 @@
-name: Build site
+name: Deploy to neocities
 
-on: 
+# only run on changes to master
+on:
   push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+    branches:
+      - master
+
+concurrency: # prevent concurrent deploys doing strange things
+  group: deploy-to-neocities
+  cancel-in-progress: true
 
 jobs:
-  build:
-    name: Build site
-
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v3
-      - name: Use Node.js  v18.0.0
-        uses: actions/setup-node@v3
-        with:
-          node-version: v18.0.0
-      - run: npm ci
-      - run: npm run build
-
   deploy:
-    needs: build
-    name: Deploy to Neocities
-
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
-
-      - if: ${{ github.ref == 'refs/heads/main' }}
-        id: deploy
-        continue-on-error: true
-        uses: bcomnes/deploy-to-neocities@v1
-        with:
-          api_token: ${{ secrets.NEOCITIES_API_KEY }}
-          dist_dir: dist  
-          cleanup: true
-
-      - name: Deploy to Neocities fallback
-        if: ${{ steps.deploy.outcome == 'failure' && github.ref == 'refs/heads/main' }}
-        uses: jonchang/deploy-neocities@master
-        with:
-          key: ${{ secrets.NEOCITIES_API_KEY }}
-          dir: dist 
-          clean: true
-
-
-
+    - uses: actions/checkout@v1
+    - name: Use Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: lts/*
+    - name: Install deps and build
+      run: |
+        npm i
+        npm run build
+    # When the dist_dir is ready, deploy it to neocities
+    - name: Deploy to neocities
+      uses: bcomnes/deploy-to-neocities@v1
+      with:
+        api_token: ${{ secrets.NEOCITIES_API_TOKEN }}
+        cleanup: false
+        dist_dir: dist 
