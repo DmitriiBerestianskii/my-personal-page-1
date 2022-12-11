@@ -334,7 +334,7 @@ footer {
   content: "➤";
 }
 
-#skills p~ {
+#skills p {
   text-align: left;
 }
 
