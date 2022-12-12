@@ -56,6 +56,10 @@ footer {
   text-shadow: var(--purple-light-2) 1px 1px, var(--purple-light-2) -0px 0px, var(--purple-light-2) -1px 1px, var(--purple-light-2) -2px 2px, var(--purple-light-2) -3px 3px, var(--purple-light-2) -4px 4px, var(--purple-light-2) -5px 5px, var(--purple-light-2) -6px 6px, var(--purple-light-2) -7px 7px, var(--purple-light-2) -8px 8px, var(--purple-light-2) -9px 9px, var(--purple-light-2) -10px 10px, var(--purple-light-2) -11px 11px, var(--purple-light-2) -12px 12px, var(--purple-light-2) -13px 13px, var(--purple-light-2) -14px 14px, var(--purple-light-2) -15px 15px, var(--purple-light-2) -16px 16px, var(--purple-light-2) -17px 17px, var(--purple-light-2) -18px 18px, var(--purple-light-2) -19px 19px, var(--purple-light-2) -20px 20px, var(--purple-light-2) -21px 21px, var(--purple-light-2) -22px 22px, var(--purple-light-2) -23px 23px, var(--purple-light-2) -24px 24px, var(--purple-light-2) -25px 25px, var(--purple-light-2) -26px 26px, var(--purple-light-2) -27px 27px, var(--purple-light-2) -28px 28px, var(--purple-light-2) -29px 29px;
 }
 
+a{
+  color: var(--pure-black)
+}
+
 /**** classes ****/
 
 /* -- navbar start -- */
@@ -356,7 +360,7 @@ footer {
 }
 
 .mail-icon {
-  max-width: 50px;
+  max-width: 20px;
 }
 /* -- content stop -- */
 
