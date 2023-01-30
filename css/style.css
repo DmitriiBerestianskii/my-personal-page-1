@@ -273,7 +273,8 @@ a{
 .container-main {
   width: 100%;
   height: 100%;
-  padding-top: 10px;
+  /* padding-top: 10px; */
+  padding-top: 4.2rem;
   /* Snappy Scroll  */
   /* max-height: 100vh; */
   /* overflow-y: scroll; */
@@ -361,6 +362,11 @@ a{
 
 .mail-icon {
   max-width: 20px;
+}
+
+
+#get_in_touch {
+  text-align: center;
 }
 /* -- content stop -- */
 

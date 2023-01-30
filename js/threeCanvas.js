@@ -62,7 +62,8 @@ function addStars(num, offset = {
 }, spread = 40, stars = starList) {
   for (let i = 0; i < num; i++) {
     // const { geometry, material } = starInfo
-    const geometry = new THREE.SphereGeometry(THREE.MathUtils.randFloat(0.1, 0.5), 14, 14)
+    const geometry = new THREE.SphereGeometry(THREE.MathUtils.randFloat(0.1, 0.5), 10, 10)
+    // const geometry = new THREE.SphereGeometry(THREE.MathUtils.randFloat(0.1, 0.5), 14, 14)
     //const material = new THREE.MeshStandardMaterial({ color: starPrimaryColors[Math.floor(Math.random() * starPrimaryColors.length)] })
     const material = new THREE.MeshBasicMaterial({ color: starPrimaryColors[Math.floor(Math.random() * starPrimaryColors.length)] })
     // const material = new THREE.MeshStandardMaterial({ color: starPrimaryColors[THREE.MathUtils.randInt(0, starPrimaryColors.length)] })
